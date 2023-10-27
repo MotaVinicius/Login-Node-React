@@ -8,11 +8,6 @@ app.use(express.json());
 app.use(cors());
 app.use(routes);
 
-
-app.get('/',(req,res) => {
-    res.send("Hello Word")
-});
-
 app.listen(port, () => {
     console.log('Ouvindo na porta 3000')
 })
